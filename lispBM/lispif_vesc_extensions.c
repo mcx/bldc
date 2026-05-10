@@ -4109,6 +4109,7 @@ static lbm_value ext_conf_set(lbm_value *args, lbm_uint argn) {
 		}
 		res = ENC_SYM_TRUE;
 	} else if (changed_app > 0) {
+		commands_apply_appconf_hw_limits(appconf);
 		if (changed_app == 2) {
 			app_set_configuration(appconf);
 		}
