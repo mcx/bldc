@@ -243,7 +243,7 @@
 #define LSM6DS3_SDA_PIN         2
 #define LSM6DS3_SCL_GPIO        GPIOA
 #define LSM6DS3_SCL_PIN         15
-#define LSM6DS3_SPEED_700KHZ	1
+#define LSM6DS3_SPEED_700KHZ
 #else
 // BMI160
 #define BMI160_SDA_GPIO         GPIOB
