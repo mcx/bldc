@@ -1974,6 +1974,7 @@ void commands_apply_mcconf_hw_limits(mc_configuration *mcconf) {
 }
 
 void commands_apply_appconf_hw_limits(app_configuration *appconf) {
+	(void)appconf;
 #ifdef HW_LIM_IMU_SAMPLE_RATE_HZ
 	utils_truncate_number_int(&appconf->imu_conf.sample_rate_hz, 0, HW_LIM_IMU_SAMPLE_RATE_HZ);
 #endif
