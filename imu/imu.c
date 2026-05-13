@@ -153,7 +153,7 @@ void imu_init(imu_config *set) {
 #endif
 
 #ifdef BMI160_SPI_PORT_NSS
-		imu_init_lsm6ds3_spi(
+		imu_init_bmi160_spi(
 				BMI160_SPI_PORT_NSS, BMI160_SPI_PIN_NSS,
 				BMI160_SPI_PORT_SCK, BMI160_SPI_PIN_SCK,
 				BMI160_SPI_PORT_MOSI, BMI160_SPI_PIN_MOSI,
